@@ -1,0 +1,252 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    height: 100%;
+    overflow-x: hidden
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #f1c40f; 
+    z-index: 100;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#main-title {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 10% 0;
+    background-image: url('taj-mahal-india-hd-1920x1080.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    animation: parallax 2s linear infinite;
+    background-attachment: fixed;
+}
+
+@keyframes parallax {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+#main-title h1 {
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#main-title h1 span {
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, transparent, transparent);
+    box-shadow:  21px 21px 41px #211e1e,
+    -21px -21px 41px transparent;
+}
+
+#taj-info {
+    padding: 4em 2em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.taj-container {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.taj-text {
+    max-width: 600px;
+}
+
+.taj-image {
+    width: 300px;
+}
+
+.taj-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+}
+
+.taj-img {
+    object-fit: cover;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.interesting-facts {
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3em;
+}
+
+.interesting-facts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.interesting-facts li {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.interesting-facts i {
+    margin-right: 10px;
+    color: #f1c40f; 
+}
+
+footer {
+    background-color: #333333ea;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+    #main-title h1 {
+        font-size: 2.5em;
+    }
+
+    #taj-info {
+        padding: 2em;
+    }
+
+    .taj-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .taj-text {
+        width: 100%;
+    }
+
+    .taj-image {
+        width: 80%;
+    }
+
+    .interesting-facts ul {
+        font-size: 1em;
+    }
+}
+.next-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.next-button {
+    background-color: #dbd034;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #b9b629;
+}
+.previous-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.previous-button {
+    background-color: #d4c823;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.previous-button:hover {
+    background-color: #cbac20;
+}
+  
+  nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+  }
+  
+  nav ul li {
+      margin: 0 25px;
+  }
+  
+  nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  .logoHeader{
+    height: 100px;
+  }
+  
+
